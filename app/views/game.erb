@@ -1,0 +1,76 @@
+<script src="/js/game.js"></script>
+<div class="container">
+<% player1 = @game.players.first %>
+<% player2 = @game.players.last %>
+
+      <header>
+        <h1>Sinatra Racer</h1>
+      </header>
+      
+      <p><span class = 'player1'><%= player1.name %></span> you hit the 'P' key</p>
+      <span class = 'player2'><%= player2.name %></span> you hit the 'Q' key</p>
+
+      <table class="racer_table">
+        <tr id="player1_strip">
+          <td class="active"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr id="player2_strip">
+          <td class="active"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    
+      <span id="winner"></span>
+      <div class="footer">
+        Copyright &copy; 2013 Radical Coeffecient, Inc.
+      </div>
+    </div>

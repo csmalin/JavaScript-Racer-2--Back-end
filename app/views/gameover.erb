@@ -1,0 +1,6 @@
+<h1>Game Over Man!</h1>
+
+<p>The winner is <%= Player.find(@game.winner).name.capitalize %></p>
+<p>The game time is: <%= @game.game_time %> seconds</p>
+<p>The link to the game stats is <a href="http://localhost:9292/stats/<%= @game.url %>">http://localhost:9292/stats/<%= @game.url %></a></p>
+<a href="/">play again</a>
